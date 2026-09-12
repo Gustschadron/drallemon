@@ -150,34 +150,40 @@
   }
   .about-body .role{ color: var(--sage-deep); font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; }
 
-  /* Specialisaties */
-  .spec-grid{
-    display:grid; grid-template-columns: repeat(3, 1fr); gap: 36px;
+    /* Info-accordion */
+  .info-accordion{ border-top: 1px solid var(--line); }
+  .info-item{ border-bottom: 1px solid var(--line); }
+  .info-item summary{
+    display:flex; align-items:center; justify-content:space-between; gap: 20px;
+    padding: 22px 2px;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.15rem;
+    color: var(--ink);
   }
-  .spec-card{
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: 30px 26px;
+  .info-item summary::-webkit-details-marker{ display:none; }
+  .info-item .chevron{
+    position: relative;
+    width: 16px; height: 16px;
+    flex: none;
   }
-  .spec-icon{ margin-bottom: 18px; }
- .spec-icon img{
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-}
-  .spec-card h3{ font-size: 1.15rem; margin-bottom: 10px; }
-  .spec-card ul{ margin-bottom: 0; }
-  .spec-card li{ font-size: 0.95rem; }
+  .info-item .chevron::before,
+  .info-item .chevron::after{
+    content:"";
+    position:absolute; left:50%; top:50%;
+    background: var(--sage-deep);
+    transform: translate(-50%,-50%);
+    transition: transform 0.15s ease;
+  }
+  .info-item .chevron::before{ width: 16px; height: 2px; }
+  .info-item .chevron::after{ width: 2px; height: 16px; }
+  .info-item[open] .chevron::after{ transform: translate(-50%,-50%) rotate(90deg); opacity:0; }
+  .info-item .info-body{ padding: 0 2px 26px; max-width: 62ch; }
+  .info-item .info-body p{ margin: 0 0 0.9em; }
+  .info-item .info-body p:last-child{ margin-bottom: 0; }
 
-  .hospital-note{
-    margin-top: 40px;
-    padding-top: 32px;
-    border-top: 1px solid var(--line);
-  }
-  .hospital-note a{ color: var(--sage-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .spec-grid{ grid-template-columns: 1fr; }
 
   /* Praktisch / secretariaat */
   .practical-grid{
