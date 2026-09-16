@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Gustschadron/drallemon
   branch: main
-  base_url: https://jouw-oauth-proxy.workers.dev
+  base_url: https://drallemon.gustscd.workers.dev
   auth_endpoint: auth
 
 publish_mode: simple
