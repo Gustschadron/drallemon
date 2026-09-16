@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Gustschadron/drallemon
+  branch: main
+  base_url: https://jouw-oauth-proxy.workers.dev
+  auth_endpoint: auth
+
+publish_mode: simple
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "content"
+    label: "Website content"
+    files:
+      - name: "home"
+        label: "Homepagina"
+        file: "content.json"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Introductietekst", name: "intro", widget: "text" }
+          - { label: "Hero-foto", name: "hero_image", widget: "image" }

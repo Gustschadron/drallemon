@@ -1,0 +1,64 @@
+{
+  "header": {
+    "phone": "0499 18 72 22",
+    "phone_link": "+32499187222"
+  },
+
+  "hero": {
+    "address_line": "Frans van der Steenstraat 134, 1750 Lennik — 0499 18 72 22",
+    "title": "Orthopedie en traumatologie, met aandacht voor elke stap.",
+    "text": "Dr. Birgitt Allemon behandelt in haar praktijk in Lennik aandoeningen van gewrichten en botten bij zowel volwassenen als kinderen. U kunt er terecht voor raadplegingen en gipsbehandelingen.",
+    "image": "img/hero.png",
+    "booking_url": "https://www.doctena.be/arts/Birgitt_Allemon-47715/Dr_Allemon_Birgitt_orthopedie_en_traumatologie-276836"
+  },
+
+  "about": {
+    "photo": "img/dokter.jpeg",
+    "role": "Orthopedisch chirurg",
+    "name": "Dr. Birgitt Allemon",
+    "paragraph_1": "Dr. Allemon runt haar privépraktijk in Lennik en is daarnaast werkzaam in het Sint-Elisabeth Ziekenhuis te Zottegem. Ze werkt uitsluitend op afspraak, zodat elke patiënt voldoende tijd en aandacht krijgt.",
+    "paragraph_2": "Voor wie na een consultatie verder onderzoek of een ingreep in het ziekenhuis nodig heeft, is het Sint-Elisabeth Ziekenhuis dankzij zijn centrale ligging vlot bereikbaar met wagen en openbaar vervoer. Meer over het ziekenhuis zelf vindt u op sezz.be."
+  },
+
+  "info_section": {
+    "heading": "Praktische info",
+    "intro": "Antwoorden op vragen die vaak terugkomen. Klik op een vraag voor meer uitleg.",
+    "items": [
+      {
+        "question": "Een gips: wat nu?",
+        "answer_1": "Houd het gips droog en belast het aangedane lidmaat zo weinig mogelijk. Leg de arm of het been waar mogelijk hoger dan het hart om zwelling te beperken.",
+        "answer_2": "Neem contact op met het secretariaat bij toenemende pijn, een blauwe of witte verkleuring van vingers of tenen, of een doof gevoel dat niet overgaat."
+      },
+      {
+        "question": "Na mijn ingreep",
+        "answer_1": "Volg de instructies die u na de operatie meekrijgt over rust, wondverzorging en het gebruik van krukken of een brace.",
+        "answer_2": "Bel de praktijk bij koorts, sterk toenemende zwelling of roodheid rond de wonde."
+      },
+      {
+        "question": "Voor uw kijkoperatie",
+        "answer_1": "Kijkoperaties aan knie of heup gebeuren in het Sint-Elisabeth Ziekenhuis te Zottegem. U ontvangt vooraf instructies over nuchter zijn en de documenten die u moet meebrengen.",
+        "answer_2": "Voorzie iemand die u na de ingreep naar huis kan brengen."
+      },
+      {
+        "question": "Raadpleging met uw kind",
+        "answer_1": "Breng eerdere onderzoeken of foto's mee indien u die heeft. Comfortabele kledij maakt het onderzoek voor uw kind gemakkelijker.",
+        "answer_2": ""
+      }
+    ]
+  },
+
+  "practical": {
+    "secretariaat_title": "Secretariaat",
+    "secretariaat_text": "Dr. Allemon werkt enkel op afspraak. Voor vragen kan u het secretariaat telefonisch bereiken.",
+    "afspraak_title": "Over uw afspraak",
+    "afspraak_regel_1": "Kan u een afspraak niet nakomen? Verwittig minstens 2 uur op voorhand, anders wordt de consultatie aangerekend.",
+    "afspraak_regel_2": "Kom op tijd, zodat het afgesproken tijdstip zo goed mogelijk gerespecteerd kan worden."
+  },
+
+  "contact": {
+    "name": "Dr. Birgitt Allemon",
+    "address": "Frans van der Steenstraat 134, 1750 Lennik",
+    "phone": "0499 18 72 22",
+    "phone_link": "+32499187222"
+  }
+}
