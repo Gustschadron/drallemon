@@ -14,9 +14,65 @@ collections:
     label: "Website content"
     files:
       - name: "home"
-        label: "Homepagina"
+        label: "Website"
         file: "content.json"
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Introductietekst", name: "intro", widget: "text" }
-          - { label: "Hero-foto", name: "hero_image", widget: "image" }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Telefoonnummer (weergave)", name: "phone", widget: "string" }
+              - { label: "Telefoonnummer (voor tel:-link)", name: "phone_link", widget: "string" }
+
+          - label: "Hero (bovenaan de pagina)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Adresregel", name: "address_line", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Tekst", name: "text", widget: "text" }
+              - { label: "Foto", name: "image", widget: "image" }
+              - { label: "Link naar online boeken", name: "booking_url", widget: "string" }
+
+          - label: "Over Dr. Allemon"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Functie", name: "role", widget: "string" }
+              - { label: "Naam", name: "name", widget: "string" }
+              - { label: "Alinea 1", name: "paragraph_1", widget: "text" }
+              - { label: "Alinea 2", name: "paragraph_2", widget: "text" }
+
+          - label: "Praktische info (veelgestelde vragen)"
+            name: "info_section"
+            widget: "object"
+            fields:
+              - { label: "Titel sectie", name: "heading", widget: "string" }
+              - { label: "Introtekst", name: "intro", widget: "string" }
+              - label: "Vragen"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Vraag", name: "question", widget: "string" }
+                  - { label: "Antwoord (deel 1)", name: "answer_1", widget: "text" }
+                  - { label: "Antwoord (deel 2)", name: "answer_2", widget: "text", required: false }
+
+          - label: "Praktisch (secretariaat & afspraken)"
+            name: "practical"
+            widget: "object"
+            fields:
+              - { label: "Titel - Secretariaat", name: "secretariaat_title", widget: "string" }
+              - { label: "Tekst - Secretariaat", name: "secretariaat_text", widget: "text" }
+              - { label: "Titel - Over uw afspraak", name: "afspraak_title", widget: "string" }
+              - { label: "Regel 1", name: "afspraak_regel_1", widget: "text" }
+              - { label: "Regel 2", name: "afspraak_regel_2", widget: "text" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Naam", name: "name", widget: "string" }
+              - { label: "Adres", name: "address", widget: "string" }
+              - { label: "Telefoon (weergave)", name: "phone", widget: "string" }
+              - { label: "Telefoon (voor tel:-link)", name: "phone_link", widget: "string" }
